@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, black,black, purple, grey,grey);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 30px solid grey;
+    border-top: 30px solid grey;
+    border-right: 30px solid black;
+    border-left: 30px solid black;
+    border-radius: 100%;
+    animation: spin 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  background-color: white;
+}
+
+.inner-spinner {
+    position: absolute;
+    text-align: center;
+    color: purple;
+  
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.balance-container {
+    margin-top: 20px;
+}
+
+#boost-screen button {
+    display: block;
+    margin: 20px auto;
+}
+#withdraw-button {
+  background-color: grey;
+}
